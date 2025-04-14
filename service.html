@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - City Centre Vehicle Garage</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- Header -->
+    <header class="header_section">
+  <!-- Top row -->
+  <div class="header_top clean-topbar">
+    <div class="container-fluid header_top_row">
+      <div class="left_info">
+        <i class="fa fa-phone"></i> Call: +44 1234 567890
+      </div>
+      <div class="logo_centered">
+    	CC_Garage
+      </div>
+      <div class="right_info">
+        <i class="fa fa-envelope"></i> info@ccgarage.com
+      </div>
+    </div>
+  </div>
+  <div class="header_bottom clean-bottombar">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand custom_nav-container">
+        <ul class="navbar-nav nav_centered">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+    <!-- End Header -->
+
+    <!-- Services Section -->
+    <section class="layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>Our Services</h2>
+          <p style=" color: #fff;">We offer a wide range of vehicle services with transparent pricing and professional care.</p>
+        </div>
+        
+    </section>
+  </div>
+	<div class="row">
+          <div class="col-md-4">
+            <h4 style="text-align: center">MOT Testing</h4>
+            <p style="text-align: center">Flat rate: £40 (extra 30% if expired)</p>
+          </div>
+          </div>
+      </div>
+  <!-- Service Table -->
+    <table class="service-table">
+	<thead class="thead-dark">
+	<tr>
+	  <th rowspan="2">Vehicle Type</th>
+	  <th colspan="4">Type of Service</th>
+	</tr>
+	<tr>
+	  <th>Minor Repair</th>
+	  <th>Major Repair</th>
+	  <th>General Service</th>
+	  <th>Health Check</th>
+	</tr>
+	<tr>
+	  <th>SUV</th>
+	  <th>£450</th>
+	  <th>£1200</th>
+	  <th>£200</th>
+	  <th>£100</th>
+	</tr>
+	<tr>
+	  <th>Minibus</th>
+	  <th>£550</th>
+	  <th>£1500</th>
+	  <th>£350</th>
+	  <th>£150</th>
+	</tr>
+	<tr>
+	  <th>Convertible</th>
+	  <th>£100</th>
+	  <th>£800</th>
+	  <th>£150</th>
+	  <th>£50</th>
+	</tr>
+ 	<tr>
+	  <th>Other Types</th>
+	  <th>£200</th>
+	  <th>£1000</th>
+	  <th>£150</th>
+	  <th>£70</th>
+	<tr>
+	</thead>
+    </table>
+    <p style="text-align: right"><b><i>*Saturday services could be booked at an extra fee of 50% service charge and a flat rate of administrative fee of £50</i></b></p>
+<div class="service-calculator">
+  <form id="calculatorForm">
+  <label for="vehicleType">Vehicle Type:</label>
+  <select id="vehicleType" required>
+    <option value="SUV">SUV</option>
+    <option value="Minibus">Minibus</option>
+    <option value="Convertible">Convertible</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <fieldset>
+  <legend>Services Required:</legend>
+  <label><input type="checkbox" id="minorRepair" value="Minor Repair"> Minor Repair</label><br>
+  <label><input type="checkbox" id="majorRepair" value="Major Repair"> Major Repair</label><br>
+  <label><input type="checkbox" value="MOT"> MOT Test</label><br>
+  <label><input type="checkbox" value="General Service"> General Service</label><br>
+  <label><input type="checkbox" value="Health Check"> Health Check</label><br>
+  </fieldset>
+
+  <label for="motExpiry">MOT Expiry Date:</label>
+  <input type="date" id="motExpiry" />
+  <br>
+  <label for="appointmentDate">Appointment Date:</label>
+  <input type="date" id="appointmentDate" required />
+  <br>
+  <button type="submit">Calculate</button>
+</form>
+
+<div id="result">
+  <!-- Result will show here -->
+</div>
+
+</div>
+
+<script src="calculator.js"></script>
+ <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayDateYear"></span> All Rights Reserved By City Centre Vehicle Garage
+      </p>
+    </div>
+  </footer>
+
+
+
+</html>
